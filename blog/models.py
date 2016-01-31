@@ -17,4 +17,9 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
-# Create your models here.
+
+class Item(models.Model):
+    title=models.CharField(max_length=200)
+    description=models.TextField()
+    amount=models.IntegerField()
+    image=models.ImageField(upload_to = 'pic_folder/', default = 'pic_folder/None/no-img.jpg')
