@@ -1,10 +1,11 @@
 <!-- Texting Scarlatti Header Embed -->
-<!-- Drop this snippet into a Drupal Full HTML / raw HTML block -->
+<!-- Paste into a Drupal Full HTML block -->
 
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;800&display=swap" rel="stylesheet">
 
 <style>
-  .ts-header {
+  /* Scoped to .curious-homepage-logo-banner to avoid conflicts with Drupal styles */
+  .curious-homepage-logo-banner {
     background-color: #CC0000;
     border-top: 5px solid #1a1a1a;
     border-bottom: 5px solid #1a1a1a;
@@ -16,30 +17,34 @@
     line-height: 1;
   }
 
-  .ts-header__title {
-    display: block;
+  .curious-homepage-logo-banner h1 {
     color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 800;
     font-size: clamp(1.4rem, 3.2vw, 2.4rem);
     letter-spacing: 0.55em;
-    text-indent: 0.55em; /* optically centres the tracked text */
+    text-indent: 0.55em; /* optically centres tracked text */
     text-transform: uppercase;
     margin: 0 0 12px 0;
+    padding: 0;
+    border: none;
+    line-height: 1.2;
   }
 
-  .ts-header__subtitle {
-    display: block;
+  .curious-homepage-logo-banner p {
     color: #ffffff;
+    font-family: 'Montserrat', Arial, sans-serif;
     font-weight: 300;
     font-size: clamp(0.95rem, 1.8vw, 1.25rem);
     letter-spacing: 0.07em;
     text-indent: 0.07em;
     margin: 0;
+    padding: 0;
     line-height: 1.5;
   }
 </style>
 
-<div class="ts-header">
-  <span class="ts-header__title">TEXTING SCARLATTI</span>
-  <span class="ts-header__subtitle">composition / reception / performance</span>
+<div class="curious-widget curious-homepage-logo-banner">
+  <h1>Texting Scarlatti</h1>
+  <p>composition / reception / performance</p>
 </div>
